@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Add Veterinarian</title>
+</head>
+<body>
+   <h3>Add Veterinarian</h3>
+   <form method="post" action="{% url 'dashboard' %}">
+       {% csrf_token %}
+       First Name: <input type="text" name="firstname"><br>
+       Last Name: <input type="text" name="lastname"><br>
+       <button type="submit">Add Veterinarian</button>
+   </form>
+</body>
+</html>

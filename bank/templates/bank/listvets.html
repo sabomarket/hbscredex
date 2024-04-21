@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Veterinarian</title>
+</head>
+<body>
+	<h2>Veterinarian</h2>
+	{% for veterinarian in veterinarians %}
+	- {{ veterinarian.firstname }} {{ veterinarian.lastname }}<br>
+	{% endfor %}
+</body>
+</html>
